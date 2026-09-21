@@ -21,7 +21,7 @@ img { max-width: 100%; height: auto; display: block; }
     padding: 0 24px;
 }
 
-/* HEADER */
+
 .header {
     position: sticky; top: 0; z-index: 100;
     background: var(--surface);
@@ -37,13 +37,13 @@ img { max-width: 100%; height: auto; display: block; }
 .nav__list a { transition: color .2s; }
 .nav__list a:hover { color: var(--accent); }
 
-/* === Кнопка переключения темы с анимацией «закат/восход» === */
+
 .theme-toggle {
     position: relative;
     width: 56px;
     height: 36px;
     border-radius: 18px;
-    background: #cfe4f0;                 /* небо днём */
+    background: #cfe4f0;                 
     border: 1px solid var(--border);
     cursor: pointer;
     overflow: hidden;
@@ -51,12 +51,12 @@ img { max-width: 100%; height: auto; display: block; }
     transition: background .5s ease;
 }
 
-/* Небо ночью */
+
 [data-theme="dark"] .theme-toggle {
     background: #1a2740;
 }
 
-/* Общие стили иконок — позиция в центре кнопки */
+
 .theme-toggle__icon {
     position: absolute;
     top: 50%;
@@ -69,18 +69,18 @@ img { max-width: 100%; height: auto; display: block; }
     user-select: none;
 }
 
-/* === СВЕТЛАЯ ТЕМА: солнце в центре, луна «ушла за горизонт» === */
+
 .theme-toggle__icon--sun {
     transform: translate(-50%, -50%);
     opacity: 1;
 }
 
 .theme-toggle__icon--moon {
-    transform: translate(-50%, 60%);     /* спрятана внизу */
+    transform: translate(-50%, 60%);     
     opacity: 0;
 }
 
-/* === ТЁМНАЯ ТЕМА: луна в центре, солнце «уходит вниз» === */
+
 [data-theme="dark"] .theme-toggle__icon--sun {
     transform: translate(-50%, 60%);
     opacity: 0;
@@ -91,7 +91,7 @@ img { max-width: 100%; height: auto; display: block; }
     opacity: 1;
 }
 
-/* ховер — лёгкое увеличение кнопки */
+
 .theme-toggle:hover {
     transform: scale(1.05);
 }
@@ -104,7 +104,7 @@ img { max-width: 100%; height: auto; display: block; }
 .burger { display: none; background: none; border: none; cursor: pointer; }
 .burger span { display: block; width: 24px; height: 2px; background: var(--text); margin: 4px 0; }
 
-/* секции */
+
 section { padding: 64px 0; }
 
 h1 { font-size: 2.5rem; margin-bottom: 16px; }
@@ -120,7 +120,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 .btn--outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); }
 .btn--outline:hover { background: var(--accent); color: #fff; }
 
-/* сетки */
+
 .benefits__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
 .benefit-card { background: var(--surface); border: 1px solid var(--border); padding: 24px; border-radius: 8px; }
 
@@ -130,7 +130,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 .product-card h3, .product-card p, .product-card__price { padding: 0 16px; }
 .product-card__price { display: block; padding-bottom: 16px; color: var(--accent); font-weight: 700; }
 
-/* слайдер */
+
 .slider { position: relative; overflow: hidden; margin-top: 32px; }
 .slider__track { display: flex; gap: 24px; }
 .slide { flex: 0 0 calc((100% - 48px) / 3); background: var(--surface); border-radius: 8px; overflow: hidden; }
@@ -148,12 +148,12 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border); border: none; cursor: pointer; }
 .dot--active { background: var(--accent); }
 
-/* about / engraving */
+
 .about__inner, .engraving__inner {
     display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
 }
 
-/* footer */
+
 .footer { background: var(--surface); border-top: 1px solid var(--border); padding: 48px 0 24px; margin-top: 64px; }
 .footer__inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .footer__col { display: flex; flex-direction: column; gap: 8px; }
@@ -161,7 +161,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 .footer__col a { transition: color .2s; }
 .footer__col a:hover { color: var(--accent); }
 
-/* АДАПТИВ */
+
 @media (max-width: 1024px) {
     .products { grid-template-columns: repeat(3, 1fr); }
     .benefits__grid { grid-template-columns: repeat(2, 1fr); }
@@ -182,7 +182,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     .slide { flex: 0 0 100%; }
     h1 { font-size: 1.75rem; }
 }
-/* Каталог */
+
 .catalog { padding: 48px 0 64px; }
 
 .catalog__subtitle {
@@ -190,7 +190,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     margin-bottom: 32px;
 }
 
-/* Категории */
+
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -220,9 +220,28 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     border-color: var(--accent);
 }
 
-/* Кнопка «Показать ещё» */
+
 .catalog__more {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+}
+.hero {
+    padding: 96px 0;
+}
+
+.hero__inner {
+    max-width: 720px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin-bottom: 32px;
 }
