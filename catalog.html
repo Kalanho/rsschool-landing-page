@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог — Family Crafto</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
+</head>
+<body>
+
+    <!-- ===== HEADER (тот же, что на главной, но ссылки на секции — через index.html#) ===== -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Family Crafto</a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="index.html#hero">Главная</a></li>
+                    <li><a href="index.html#products">Изделия</a></li>
+                    <li><a href="index.html#benefits">О нас</a></li>
+                    <li><a href="index.html#engraving">Гравировка</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Переключить тему">
+                <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+                <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+            </button>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main class="catalog">
+        <div class="container">
+
+            <!-- 1. Заголовок H1 (единственный на странице) -->
+            <h1>Каталог</h1>
+            <p class="catalog__subtitle">Кожаные изделия ручной работы — ремни, сумки, папки, аксессуары</p>
+
+            <!-- 2. Категории (≥3) + переключатели -->
+            <div class="categories" role="tablist" aria-label="Категории товаров">
+                <button class="category category--active" type="button">Ремни</button>
+                <button class="category" type="button">Сумки</button>
+                <button class="category" type="button">Папки</button>
+                <button class="category" type="button">Аксессуары</button>
+            </div>
+            <h2 class="visually-hidden">Ремни</h2>
+            <!-- 3. Сетка карточек (≥8 в активной категории) -->
+            <ul class="products">
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-1.jpg" alt="Кожаный ремень Classic Brown">
+                    <h3>Ремень Classic Brown</h3>
+                    <p>Гладкая кожа, латунная пряжка</p>
+                    <span class="product-card__price">3 500 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-2.jpg" alt="Кожаный ремень Black Heritage">
+                    <h3>Ремень Black Heritage</h3>
+                    <p>Состаренная кожа, стальная пряжка</p>
+                    <span class="product-card__price">3 800 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-3.jpg" alt="Кожаный ремень Slim Cognac">
+                    <h3>Ремень Slim Cognac</h3>
+                    <p>Тонкий ремень под джинсы, 3 см</p>
+                    <span class="product-card__price">3 200 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-4.jpg" alt="Кожаный ремень Bravo">
+                    <h3>Ремень Bravo</h3>
+                    <p>Широкий ремень 4 см, ручная прошивка</p>
+                    <span class="product-card__price">4 200 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-5.jpg" alt="Кожаный ремень Casual Tan">
+                    <h3>Ремень Casual Tan</h3>
+                    <p>Повседневный, мягкая кожа</p>
+                    <span class="product-card__price">3 400 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-6.jpg" alt="Кожаный ремень Dress Black">
+                    <h3>Ремень Dress Black</h3>
+                    <p>Под костюм, тонкая пряжка</p>
+                    <span class="product-card__price">3 900 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-7.jpg" alt="Кожаный ремень Wild Brown">
+                    <h3>Ремень Wild Brown</h3>
+                    <p>Кожа растительного дубления</p>
+                    <span class="product-card__price">4 500 ₽</span>
+                </li>
+
+                <li class="product-card">
+                    <img src="images/catalog/belt-8.jpg" alt="Кожаный ремень Urban Grey">
+                    <h3>Ремень Urban Grey</h3>
+                    <p>Серый нубук, матовая пряжка</p>
+                    <span class="product-card__price">4 100 ₽</span>
+                </li>
+
+            </ul>
+
+            <!-- 4. Кнопка «Показать ещё» -->
+            <div class="catalog__more">
+                <button class="btn btn--outline" type="button">Показать ещё</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== FOOTER (тот же, что на главной) ===== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3>Контакты</h3>
+                <a href="tel:+375291234567">+375 29 123-45-67</a>
+                <a href="mailto:info@familycrafto.by">info@familycrafto.by</a>
+                <a href="https://maps.google.com/?q=Minsk" target="_blank" rel="noopener">Минск, ул. Мастеров 1</a>
+            </div>
+            <div class="footer__col">
+                <h3>Мы в сети</h3>
+                <a href="https://instagram.com/family_crafto" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://t.me/family_crafto" target="_blank" rel="noopener">Telegram</a>
+                <a href="https://wa.me/375291234567" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <div class="footer__col">
+                <p>© 2025 Family Crafto</p>
+                <a href="https://rs.school/js/" target="_blank" rel="noopener">RS School</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
