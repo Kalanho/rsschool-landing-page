@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Crafto — кожаные изделия ручной работы</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="index.html" class="logo">Family Crafto</a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#hero">Главная</a></li>
+                    <li><a href="#products">Изделия</a></li>
+                    <li><a href="#benefits">О нас</a></li>
+                    <li><a href="#engraving">Гравировка</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Переключить тему">
+                <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀️</span>
+                <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">🌙</span>
+            </button>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+    <main> 
+    <section class="hero" id="hero">
+        <div class="container hero__inner">
+            <h1>Кожаные изделия ручной работы</h1>
+            <p>Ремни, сумки, аксессуары из натуральной кожи. Индивидуальный пошив и гравировка.</p>
+            <a href="catalog.html" class="btn">Смотреть каталог</a>
+        </div>
+    </section>
+    <section class="products-slider" id="products">
+        <div class="container">
+            <h2>Наши изделия</h2>
+            <div class="slider">
+                <ul class="slider__track">
+                    <li class="slide">
+                        <img src="images/remen.jpg" alt="Кожаный ремень ручной работы">
+                        <h3>Ремни</h3>
+                        <p>Классические и повседневные, под заказ по меркам</p>
+                    </li>
+                    <li class="slide">
+                        <img src="images/sum4.jpg" alt="Кожаная сумка ручной работы">
+                        <h3>Сумки</h3>
+                        <p>Шоперы, кросс-боди, тоуты из натуральной кожи</p>
+                    </li>
+                    <li class="slide">
+                        <img src="images/cosel4.jpg" alt="Кожаная папка для документов">
+                        <h3>Аксессуары</h3>
+                        <p>Для документов, ноутбука и картхолдеры</p>
+                    </li>
+                </ul>
+                <button class="slider__btn slider__btn--prev" aria-label="Предыдущий слайд">
+                    <span aria-hidden="true">◀</span>
+                </button>
+                <button class="slider__btn slider__btn--next" aria-label="Следующий слайд">
+                    <span aria-hidden="true">▶</span>
+                </button>
+                <div class="slider__dots">
+                    <button class="dot dot--active" aria-label="Слайд 1"></button>
+                    <button class="dot" aria-label="Слайд 2"></button>
+                    <button class="dot" aria-label="Слайд 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Почему Family Crafto</h2>
+            <ul class="benefits__grid">
+                <li class="benefit-card">
+                    <h3>Натуральная кожа</h3>
+                    <p>Растительное дубление, честные материалы</p>
+                </li>
+                <li class="benefit-card">
+                    <h3>Ручная работа</h3>
+                    <p>Каждое изделие шьётся вручную в мастерской</p>
+                </li>
+                <li class="benefit-card">
+                    <h3>Под заказ</h3>
+                    <p>По вашим меркам и эскизам</p>
+                </li>
+                <li class="benefit-card">
+                    <h3>Гравировка</h3>
+                    <p>Инициалы, даты, логотипы — на любом изделии</p>
+                </li>
+                <li class="benefit-card">
+                    <h3>Доставка</h3>
+                    <p>По Беларуси и СНГ</p>
+                </li>
+                <li class="benefit-card">
+                    <h3>Гарантия 1 год</h3>
+                    <p>На швы и фурнитуру</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container about__inner">
+            <img src="images/der.jpg" alt="Мастер Family Crafto за работой">
+            <div class="about__text">
+                <h2>О мастерской</h2>
+                <p>Family Crafto — небольшая семейная мастерская кожаных изделий. Мы шьём ремни, сумки, аксессуары вручную, уделяя внимание каждой детали — от кроя до финишной полировки края.</p>
+                <p>Работаем с натуральной кожей растительного дубления и делаем вещи, которые служат годами.</p>
+            </div>
+        </div>
+    </section>
+    <section class="engraving" id="engraving">
+        <div class="container engraving__inner">
+            <div class="engraving__text">
+                <h2>Гравировка на изделии</h2>
+                <p>Нанесём инициалы, памятную дату или логотип компании на любое изделие. Отличный вариант для подарка.</p>
+                <a href="catalog.html" class="btn btn--outline">Заказать гравировку</a>
+            </div>
+            <img src="images/grav3.jpg" alt="Пример гравировки инициалов на коже">
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h3>Контакты</h3>
+                <a href="mailto:info@familycrafto.by">info@familycrafto.by</a>
+            </div>
+    
+            <div class="footer__col">
+                <h3>Мы в сети</h3>
+                <a href="https://t.me/family_crafto" target="_blank" rel="noopener">Telegram</a>
+                <a href="https://wa.me/375291234567" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+            <div class="footer__col">
+                <p>© 2026 Family Crafto</p>
+                <a href="https://rs.school/courses/javascript" target="_blank" rel="noopener">RS School</a>
+                <a href="https://github.com/Kalanho" target="_blank" rel="noopener" class="footer__link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
