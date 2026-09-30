@@ -136,7 +136,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка City Tote',
         description: 'Городской шопер из натуральной кожи',
-        image: 'images/sum4.jpg',
+        image: 'images/sum5.jpg',
         price: 450,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -152,7 +152,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Cross Body',
         description: 'Компактная кросс-боди через плечо',
-        image: 'images/sum4.jpg',
+        image: 'images/sum6.jpg',
         price: 380,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -168,7 +168,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Weekend',
         description: 'Вместительная сумка для поездок',
-        image: 'images/sum4.jpg',
+        image: 'images/sum7.jpg',
         price: 620,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -184,7 +184,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Mini',
         description: 'Маленькая сумочка для essentials',
-        image: 'images/sum4.jpg',
+        image: 'images/sum8.jpg',
         price: 290,
         params: {
             'Цвет': ['Коричневый', 'Бордо', 'Чёрный'],
@@ -200,7 +200,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Business',
         description: 'Деловая сумка для документов и ноутбука',
-        image: 'images/sum4.jpg',
+        image: 'images/sum9.jpg',
         price: 550,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -216,7 +216,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Bucket',
         description: 'Сумка-ведро с затяжкой',
-        image: 'images/sum4.jpg',
+        image: 'images/sum10.jpg',
         price: 410,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -232,7 +232,7 @@ export const products = [
         category: 'bags',
         name: 'Сумка Hobo',
         description: 'Мягкая сумка-хобо через плечо',
-        image: 'images/sum4.jpg',
+        image: 'images/sum.jpg',
         price: 470,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -266,7 +266,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Slim',
         description: 'Тонкий кошелёк на 6 карт',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart.jpg',
         price: 120,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -282,7 +282,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Classic',
         description: 'Классический кошелёк с отделением для монет',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart2.jpg',
         price: 150,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -298,7 +298,7 @@ export const products = [
         category: 'wallets',
         name: 'Картхолдер',
         description: 'Компактный держатель для карт',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart4.jpg',
         price: 90,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -314,7 +314,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Zip',
         description: 'Кошелёк на молнии с двумя отделениями',
-        image: 'images/cosel4.jpg',
+        image: 'images/cos.jpg',
         price: 170,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -330,7 +330,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Long',
         description: 'Длинный кошелёк для купюр без сгиба',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart1.jpg',
         price: 190,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -346,7 +346,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Compact',
         description: 'Компактный кошелёк с зажимом',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart5.jpg',
         price: 130,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -362,7 +362,7 @@ export const products = [
         category: 'wallets',
         name: 'Портмоне',
         description: 'Большое портмоне с множеством отделений',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart6.jpg',
         price: 210,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -378,7 +378,7 @@ export const products = [
         category: 'wallets',
         name: 'Кошелёк Travel',
         description: 'Дорожный кошелёк для документов и карт',
-        image: 'images/cosel4.jpg',
+        image: 'images/cart7.jpg',
         price: 240,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -396,7 +396,7 @@ export const products = [
         category: 'accessories',
         name: 'Папка для документов',
         description: 'Папка А4 из натуральной кожи',
-        image: 'images/cosel4.jpg',
+        image: 'images/accs1.jpg',
         price: 320,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -412,7 +412,7 @@ export const products = [
         category: 'accessories',
         name: 'Обложка для паспорта',
         description: 'Кожаная обложка для паспорта',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs1.jpg',
         price: 80,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -428,7 +428,7 @@ export const products = [
         category: 'accessories',
         name: 'Брелок для ключей',
         description: 'Кожаный брелок с карабином',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs2.jpg',
         price: 50,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -444,7 +444,7 @@ export const products = [
         category: 'accessories',
         name: 'Чехол для очков',
         description: 'Мягкий кожаный чехол для очков',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs3.jpg',
         price: 110,
         params: {
             'Цвет': ['Коричневый', 'Чёрный', 'Бордо'],
@@ -460,7 +460,7 @@ export const products = [
         category: 'accessories',
         name: 'Ремешок для часов',
         description: 'Кожаный ремешок для наручных часов',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs4.jpg',
         price: 95,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -476,7 +476,7 @@ export const products = [
         category: 'accessories',
         name: 'Ключница',
         description: 'Кожаная ключница на 6 ключей',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs5.jpg',
         price: 130,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -492,7 +492,7 @@ export const products = [
         category: 'accessories',
         name: 'Обложка для книг',
         description: 'Кожаная обложка для книги А5',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs6.jpg',
         price: 180,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
@@ -508,7 +508,7 @@ export const products = [
         category: 'accessories',
         name: 'Подставка под кружку',
         description: 'Кожаная подставка под горячее',
-        image: 'images/cosel4.jpg',
+        image: 'images/acs8.jpg',
         price: 40,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
