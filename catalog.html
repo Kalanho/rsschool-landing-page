@@ -11,7 +11,6 @@
 </head>
 <body>
 
-    
     <header class="header">
         <div class="container header__inner">
             <a href="index.html" class="logo">Family Crafto</a>
@@ -37,102 +36,45 @@
         </div>
     </header>
 
-   
     <main class="catalog">
         <div class="container">
-
-           
             <h1>Каталог</h1>
-            <p class="catalog__subtitle">Кожаные изделия ручной работы — ремни, сумки, аксессуары</p>
+            <p class="catalog__subtitle">Кожаные изделия ручной работы — ремни, сумки, кошельки, аксессуары</p>
 
-            
             <div class="categories" role="tablist" aria-label="Категории товаров">
-                <button class="category category--active" type="button">Ремни</button>
-                <button class="category" type="button">Сумки</button>
-                <button class="category" type="button">Кошельки</button>
-                <button class="category" type="button">Аксессуары</button>
+                <button class="category category--active" type="button" data-category="belts">Ремни</button>
+                <button class="category" type="button" data-category="bags">Сумки</button>
+                <button class="category" type="button" data-category="wallets">Кошельки</button>
+                <button class="category" type="button" data-category="accessories">Аксессуары</button>
             </div>
-            <h2 class="visually-hidden">Ремни</h2>
-        
-            <ul class="products">
 
-                <li class="product-card">
-                    <img src="images/remen4.jpg" alt="Синий кожаный ремень с контрастной прошивкой">
-                    <h3>Ремень Navy Stitch</h3>
-                    <p>Синяя кожа, контрастная прошивка, латунная пряжка</p>
-                    <span class="product-card__price">195 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen5.jpg" alt="Коричневый кожаный ремень с двойной прошивкой">
-                    <h3>Ремень Heritage Brown</h3>
-                    <p>Коричневая кожа, двойная прошивка, стальная пряжка</p>
-                    <span class="product-card__price">220 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen3.jpg" alt="Тонкий коричневый кожаный ремень под джинсы">
-                    <h3>Ремень Slim Cognac</h3>
-                    <p>Тонкий ремень 3 см, под джинсы и брюки</p>
-                    <span class="product-card__price">175 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen6.jpg" alt="Кожаный ремень с тиснением ручной работы">
-                    <h3>Ремень Bravo</h3>
-                    <p>Ширина 4 см, тиснение, ручная прошивка</p>
-                    <span class="product-card__price">240 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen10.jpg" alt="Узкий кожаный ремень с латунной пряжкой">
-                    <h3>Ремень Casual Tan</h3>
-                    <p>Узкий ремень 2,5 см, латунная пряжка, мягкая кожа</p>
-                    <span class="product-card__price">270 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen9.jpg" alt="Классический тёмно-коричневый ремень под костюм">
-                    <h3>Ремень Dress Brown</h3>
-                    <p>Под костюм, тонкая пряжка, гладкая кожа</p>
-                    <span class="product-card__price">300 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen8.jpg" alt="Кожаный ремень ручной работы с тиснением">
-                    <h3>Ремень Wild Tan</h3>
-                    <p>Кожа растительного дубления, ручное тиснение</p>
-                    <span class="product-card__price">260 BYN</span>
-                </li>
-            
-                <li class="product-card">
-                    <img src="images/remen7.jpg" alt="Состаренный кожаный ремень тёмно-коричневый">
-                    <h3>Ремень Urban Vintage</h3>
-                    <p>Состаренная кожа, матовая пряжка, эффект винтаж</p>
-                    <span class="product-card__price">230 BYN</span>
-                </li>
-            
-            </ul>
+            <ul class="products" id="products"></ul>
 
             <div class="catalog__more">
-                <button class="btn btn--outline" type="button">Показать ещё</button>
+                <button class="btn btn--outline" id="show-more" type="button">Показать ещё</button>
             </div>
-
         </div>
     </main>
 
-    
+    <!-- Модальное окно -->
+    <div class="modal" id="modal" hidden>
+        <div class="modal__overlay" data-close></div>
+        <div class="modal__content" role="dialog" aria-modal="true" aria-label="Информация о товаре"></div>
+    </div>
+
     <footer class="footer">
         <div class="container footer__inner">
             <div class="footer__col">
                 <h3>Контакты</h3>
                 <a href="mailto:info@familycrafto.by">info@familycrafto.by</a>
             </div>
+
             <div class="footer__col">
                 <h3>Мы в сети</h3>
                 <a href="https://t.me/family_crafto" target="_blank" rel="noopener">Telegram</a>
                 <a href="https://wa.me/375291234567" target="_blank" rel="noopener">WhatsApp</a>
             </div>
+
             <div class="footer__col">
                 <p>© 2026 Family Crafto</p>
                 <a href="https://rs.school/js/" target="_blank" rel="noopener">RS School</a>
@@ -141,5 +83,8 @@
         </div>
     </footer>
 
+    <script src="js/burger.js"></script>
+    <script type="module" src="js/catalog.js"></script>
+    <script type="module" src="js/modal.js"></script>
 </body>
 </html>
