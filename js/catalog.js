@@ -39,7 +39,7 @@ function renderCards() {
     `).join('');
 
     if (showMoreBtn) {
-        // Кнопка видна только если есть скрытые карточки
+        
         showMoreBtn.hidden = visible.length >= list.length;
     }
 }
@@ -59,16 +59,15 @@ categoryButtons.forEach(btn => {
 });
 
 showMoreBtn?.addEventListener('click', () => {
-    showAll = true;      // показываем ВСЕ оставшиеся карточки
+    showAll = true;      
     renderCards();
 });
 
-// Пересчёт при изменении ширины окна
+
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        // при переходе между режимами сбрасываем "показать всё"
         if (!isMobile()) showAll = false;
         renderCards();
     }, 150);
