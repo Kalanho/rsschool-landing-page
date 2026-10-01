@@ -26,19 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
+  
     nav.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
-
+ 
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape' && nav.classList.contains('nav--open')) {
             closeMenu();
         }
     });
 
-
+   
     window.addEventListener('resize', () => {
         if (window.innerWidth > 768 && nav.classList.contains('nav--open')) {
             closeMenu();
