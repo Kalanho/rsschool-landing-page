@@ -532,13 +532,16 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
         max-height: calc(100vh - 68px);
         overflow-y: auto;
     }
+    
     .nav--open {
         transform: translateY(0);
     }
+    
     .nav__list {
         flex-direction: column;
         gap: 16px;
     }
+  
     .nav__list a {
         display: block;
         padding: 12px 0;
