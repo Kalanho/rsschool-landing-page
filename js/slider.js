@@ -10,18 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         let index = 0;
 
-        function getSlideWidth() {
-            return slides[0].getBoundingClientRect().width;
-        }
-
-        function getGap() {
-            const style = getComputedStyle(track);
-            return parseFloat(style.gap) || 0;
-        }
-
         function update() {
-            const step = getSlideWidth() + getGap();
-            track.style.transform = `translateX(-${index * step}px)`;
+            const step = slides[0].getBoundingClientRect().width;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            track.style.transform = `translateX(-${index * (step + gap)}px)`;
             dots.forEach((d, i) => d.classList.toggle('dot--active', i === index));
         }
 

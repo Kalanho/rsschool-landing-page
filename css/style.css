@@ -131,14 +131,35 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 .product-card__price { display: block; padding-bottom: 16px; color: var(--accent); font-weight: 700; }
 
 
-.slider { position: relative; overflow: hidden; margin-top: 32px; }
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
 .slider__track {
     display: flex;
     gap: 24px;
-    transition: transform .5s cubic-bezier(.4, 0, .2, 1);  /* ← вот это */
+    transition: transform .5s cubic-bezier(.4, 0, .2, 1);
 }
-.slide { flex: 0 0 calc((100% - 48px) / 3); background: var(--surface); border-radius: 8px; overflow: hidden; }
-.slide h3, .slide p { padding: 8px 16px; }
+
+.slide {
+    flex: 0 0 100%;
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.slide h3,
+.slide p {
+    padding: 8px 16px;
+}
 
 .slider__btn {
     position: absolute;
@@ -147,7 +168,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: var(--surface);          
+    background: var(--surface);
     color: var(--text);
     border: 1px solid var(--border);
     cursor: pointer;
@@ -204,14 +225,12 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     .burger { display: block; }
     .about__inner, .engraving__inner { grid-template-columns: 1fr; }
     .products { grid-template-columns: repeat(2, 1fr); }
-    .slide { flex: 0 0 calc((100% - 24px) / 2); }
     h1 { font-size: 2rem; }
 }
 
 @media (max-width: 480px) {
     .container { padding: 0 16px; }
     .products, .benefits__grid, .footer__inner { grid-template-columns: 1fr; }
-    .slide { flex: 0 0 100%; }
     h1 { font-size: 1.75rem; }
 }
 
