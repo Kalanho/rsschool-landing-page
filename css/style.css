@@ -135,6 +135,9 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
     position: relative;
     overflow: hidden;
     margin-top: 32px;
+    max-width: 500px;              
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slider__track {
@@ -145,6 +148,8 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 
 .slide {
     flex: 0 0 100%;
+    max-width: 500px;             
+    margin: 0 auto;               
     background: var(--surface);
     border-radius: 8px;
     overflow: hidden;
@@ -152,7 +157,7 @@ h2 { font-size: 1.75rem; margin-bottom: 16px; }
 
 .slide img {
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
 }
 
