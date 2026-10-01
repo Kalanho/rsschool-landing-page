@@ -410,10 +410,10 @@ export const products = [
     {
         id: 26,
         category: 'accessories',
-        name: 'Обложка для паспорта',
-        description: 'Кожаная обложка с тиснением',
+        name: 'Брелок',
+        description: 'Брелок',
         image: 'images/acs1.jpg',
-        price: 80,
+        price: 25,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
             'Гравировка': ['Без гравировки', 'С инициалами']
@@ -426,10 +426,10 @@ export const products = [
     {
         id: 27,
         category: 'accessories',
-        name: 'Брелок для ключей',
-        description: 'Кожаный брелок с гравировкой',
+        name: 'Браслет с узором',
+        description: 'Браслет с узором',
         image: 'images/acs2.jpg',
-        price: 50,
+        price: 30,
         params: {
             'Цвет': ['Коричневый', 'Рыжий'],
             'Гравировка': ['Без гравировки', 'С инициалами']
@@ -442,10 +442,10 @@ export const products = [
     {
         id: 28,
         category: 'accessories',
-        name: 'Чехол для очков',
-        description: 'Кожаный чехол с заклёпками',
+        name: 'Браслет',
+        description: 'Браслет',
         image: 'images/acs3.jpg',
-        price: 110,
+        price: 30,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
             'Гравировка': ['Без гравировки', 'С инициалами']
@@ -458,10 +458,10 @@ export const products = [
     {
         id: 29,
         category: 'accessories',
-        name: 'Ремешок для часов',
-        description: 'Кожаный ремешок ручной работы',
+        name: 'Брелок',
+        description: 'Брелок',
         image: 'images/acs4.jpg',
-        price: 95,
+        price: 30,
         params: {
             'Цвет': ['Бирюзовый', 'Коричневый'],
             'Размер': ['18 мм', '20 мм', '22 мм']
@@ -474,10 +474,10 @@ export const products = [
     {
         id: 30,
         category: 'accessories',
-        name: 'Ключница',
-        description: 'Кожаная ключница на 6 ключей',
+        name: 'Брелки для ключей',
+        description: 'Брелки для ключей',
         image: 'images/acs5.jpg',
-        price: 130,
+        price: 25,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
             'Гравировка': ['Без гравировки', 'С инициалами']
@@ -490,10 +490,10 @@ export const products = [
     {
         id: 31,
         category: 'accessories',
-        name: 'Обложка для книг',
-        description: 'Кожаная обложка с пряжкой',
+        name: 'Браслет',
+        description: 'Браслет',
         image: 'images/acs6.jpg',
-        price: 180,
+        price: 30,
         params: {
             'Цвет': ['Коричневый', 'Чёрный'],
             'Гравировка': ['Без гравировки', 'С инициалами']
@@ -506,10 +506,10 @@ export const products = [
     {
         id: 32,
         category: 'accessories',
-        name: 'Подставка под кружку',
-        description: 'Кожаная подставка-листик',
+        name: 'Брелок листик',
+        description: 'Брелок листик',
         image: 'images/acs8.jpg',
-        price: 40,
+        price: 20,
         params: {
             'Цвет': ['Зелёный', 'Коричневый'],
             'Гравировка': ['Без гравировки', 'С инициалами']
